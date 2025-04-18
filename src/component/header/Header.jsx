@@ -17,7 +17,7 @@ const Header = () => {
           <option value="fa">fa</option>
         </select>
         <NavLink to='/' className={({isActive})=>{return isActive ? 'bg-[aqua] p-4 rounded-xl' : 'p-4 rounded-xl'}}>Home</NavLink>
-
+        <NavLink to='/courses' className={({isActive})=>{return isActive ? 'bg-[aqua] p-4 rounded-xl' : 'p-4 rounded-xl'}}>courses</NavLink>
     </div>
   )
 }
