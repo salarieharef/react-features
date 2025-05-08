@@ -6,10 +6,9 @@ const Iran = () => {
     const {t} = useTranslation("list")
 
     const newList = list.map(item => {
-        
         return {
-            id: item.id,
-            desc: t(`${item.id}.desc`)
+            ...item, 
+            desc: t(`${item.id}.desc`)  
         }
     })
 
@@ -19,7 +18,7 @@ const Iran = () => {
     <div>
         {newList.map(item =>{
             return(
-                <div key={item.id} >{item.desc}</div>
+                <div key={item.id} >{item.desc} {item.age}</div>
             )
         })}
     </div>

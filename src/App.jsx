@@ -7,6 +7,7 @@ import i18n from './utils/i18';
 import Courses from "./pages/courses/courses";
 import Blog from "./pages/Blog/Blog";
 import Iran from "./pages/Iran/Iran";
+import Jack from "./pages/Jack/Jack";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,10 @@ const router = createBrowserRouter([
         path: "/iran",
         element: <Iran />,
       },              
-      
+      {
+        path: "/jack",
+        element: <Jack />,
+      },           
     ],
   },
 ]);
